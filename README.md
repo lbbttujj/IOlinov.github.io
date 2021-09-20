@@ -2,3 +2,4 @@
 # студент группы ИДБ-18-06 Олинов И.В. 
 
 # Лабораторная 1
+![image](https://user-images.githubusercontent.com/62188765/133982888-e749b993-fc7f-42d5-b44d-726531080f92.png)
