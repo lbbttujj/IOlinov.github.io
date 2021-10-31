@@ -12,3 +12,8 @@
 ![image](https://user-images.githubusercontent.com/62188765/134022060-0cb98c88-d0e4-43be-9398-9b6ce83e6371.png)
 
 ![image](https://user-images.githubusercontent.com/62188765/134023000-69e87bbb-ad9f-4528-a864-1278f0bfcde3.png)
+
+# Лабораторная 2
+# IDEF0 (контекстная)
+
+![modelLaba2](https://user-images.githubusercontent.com/62188765/139578220-ee9cf76f-d256-4f58-b2f3-d89ef58025c1.png)
