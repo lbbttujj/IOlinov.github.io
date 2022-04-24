@@ -1,0 +1,36 @@
+@startuml
+skinparam class {
+	BackgroundColor White
+	ArrowColor Black
+	BorderColor Black
+}
+hide circle
+hide methods
+
+
+class userTracks{
+   userTracks_id_user : id
+   userTracks_id_track  : id
+   userTracks_id: id
+}
+
+class User{
+   user_id : id
+   user_login:varchar
+   user_password: varchar
+}
+
+
+class Track{
+   track_id : id
+   track_name : varchar 
+   track_bpm : varchar
+}
+
+
+Track--> userTracks
+User--> userTracks
+
+
+
+@enduml
