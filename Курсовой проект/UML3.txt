@@ -1,0 +1,38 @@
+@startuml
+skinparam monochrome true
+
+actor "Пользователь" as user
+participant "Приложения" as cli
+database "База данных" as db
+
+activate user
+activate cli
+
+
+
+user -> cli: Переход в Web-приложение
+cli -> user: Интерфейс начальной страницы
+
+
+cli-> db: Получение данных о пользователе
+activate db
+db-> cli: 
+deactivate db
+
+user -> cli: Ввод команд с помощью интерфейса
+cli -> user: Отклик на действия пользователя c помощью web страницы
+
+user -> cli: Прослушивание промежуточного результата
+
+cli -> user: Проигрывание аудиофайлов с помощью бразуера
+
+user -> cli: Сохранение и экспорт аудиокомпозиции"
+cli -> user: Отклик на действия пользователя c помощью web страницы
+
+cli-> db: Обновить данные в БД
+activate db
+db-> cli:
+deactivate db
+cli -> user: "Музыкальная композиция создана и записана в БД"
+
+@enduml
