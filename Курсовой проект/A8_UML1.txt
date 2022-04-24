@@ -1,0 +1,31 @@
+@startuml
+skinparam monochrome true
+hide circle
+hide methods
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Пользователь"
+actor "Программный_модуль" 
+actor "Браузер"
+Браузер-->Программный_модуль
+rectangle Приложение {
+
+usecase case1 as "Получить данные о пользователе"
+usecase case2 as "Получить данные об аудифайлах ипользуемых в приложении"
+usecase case3 as "Сопоставить данные об аудиофалах в приложении с пользователем"
+usecase case4 as "Составить запрос на сервер"
+usecase case5 as "Получение команд пользователя"
+ Пользователь-- case5
+ (case5) .> (case1)
+ (case1) .> (case2)
+ (case2) .> (case3)  
+ (case3) .> (case4) 
+
+ case1 -- Браузер
+ case2 -- Браузер
+ case3 -- Браузер
+ case4 -- Браузер
+ case5 -- Браузер
+}
+@enduml
