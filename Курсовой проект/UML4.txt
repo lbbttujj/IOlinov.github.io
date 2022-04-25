@@ -14,8 +14,8 @@ component [Сервер] as DB
 component [Пользователь] as PR
 component [Приложение] as Server
 
-() "node js" as L1
-() "Браузер" as L2
+() "SQL" as L1
+() "API" as L2
 
 PR - L2
 L2 - Server
